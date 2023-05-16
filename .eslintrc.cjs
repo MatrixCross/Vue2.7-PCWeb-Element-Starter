@@ -1,15 +1,14 @@
 module.exports = {
   root: true,
-
   env: {
     node: true,
   },
-
   extends: [
     'plugin:vue/essential',
     'plugin:@typescript-eslint/recommended',
     'eslint:recommended',
     'plugin:prettier/recommended',
+    './.eslintrc-auto-import.json',
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {
@@ -17,7 +16,6 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-
   rules: {
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',

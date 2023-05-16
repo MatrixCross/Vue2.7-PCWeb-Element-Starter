@@ -10,9 +10,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import HeaderTop from '/@/views/Layout/HeaderTop.vue'
-import SideBar from '/@/views/Layout/SideBar.vue'
-import { provide } from 'vue'
+import HeaderTop from '@/views/Layout/HeaderTop.vue'
+import SideBar from '@/views/Layout/SideBar.vue'
 
 const setTest = (v) => {
   alert(v)

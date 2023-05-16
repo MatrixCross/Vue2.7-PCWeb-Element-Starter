@@ -20,14 +20,14 @@
     "lib": ["dom", "esnext"],
     "noImplicitAny": false,
     "skipLibCheck": true,
-    "types": ["vite/client"],
+    "types": ["vite/client", "unplugin-icons/types/vue"],
     "removeComments": true,
     "paths": {
-      "/@/*": ["src/*"]
+      "@/*": ["./src/*"]
     },
   },
   "vueCompilerOptions": {
-    "experimentalCompatMode": 2
+    "target": 2.7
   },
   "include": [
     "tests/**/*.ts",
@@ -35,8 +35,8 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "types/**/*.d.ts",
-    "types/**/*.ts",
+    "typings/**/*.d.ts",
+    "typings/**/*.ts",
     "vite.config.ts"
   ],
   "exclude": ["node_modules", "dist", "**/*.js"]

@@ -12,13 +12,9 @@
   </div>
 </template>
 <script setup lang="ts">
-import useCounterStore from '/@/store/modules/app'
-import { storeToRefs } from 'pinia'
-import { GetDataApi } from '/@/apis/data.api'
-import { inject, onMounted, ref } from 'vue'
+import useCounterStore from '@/store/modules/app'
+import { GetDataApi } from '@/apis/data.api'
 import Message from 'element-ui/lib/message'
-import 'element-ui/lib/theme-chalk/message.css'
-import { useRouter } from 'vue-router/composables'
 const $router = useRouter()
 
 const injectEvent: any = inject('test')

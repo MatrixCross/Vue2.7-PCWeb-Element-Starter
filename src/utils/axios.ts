@@ -1,5 +1,5 @@
 import axios, { ResponseType } from 'axios'
-import { NoticeType } from 'types/axios'
+import { NoticeType } from 'typings/axios'
 import Notification from 'element-ui/lib/notification'
 
 const instance = axios.create({

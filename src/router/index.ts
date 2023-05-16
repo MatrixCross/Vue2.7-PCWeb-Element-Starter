@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Layout from '/@/views/Layout/index.vue'
+import Layout from '@/views/Layout/index.vue'
 Vue.use(VueRouter)
 
 export const constantRoutes = [
@@ -43,6 +43,8 @@ export const constantRoutes = [
 const createRouter = () =>
   new VueRouter({
     routes: constantRoutes,
+    base: process.env.VITE_BASE_URL,
+    mode: 'history'
   })
 
 const router = createRouter()
